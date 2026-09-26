@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>بررسی سفارش - مینابازار</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/shared/general.css">
+  <link rel="stylesheet" href="styles/shared/mina-bazar-header.css">
+  <link rel="stylesheet" href="styles/pages/checkout.css">
+</head>
+<body>
+  
+  <div class="minabazar-header">
+    <div class="minabazar-header-left-section">
+      <a href="mina-bazar.html" class="header-link">
+        <img src="images/mina bazar -logo.jpeg" alt="مینابازار" width="55" class="small-img" onerror="this.src='https://via.placeholder.com/55?text=MB';">
+        <img class="minabazar-mobile-logo" src="images/mina bazar -logo.jpeg" alt="مینابازار" onerror="this.src='https://via.placeholder.com/100x40?text=مینابازار';">
+      </a>
+    </div>
+      <div class="checkout-header-middle-section">
+        بررسی سفارش (<a class="return-to-home-link" href="mina-bazar.html">ادامه خرید</a>)
+      </div>
+      <div class="checkout-header-right-section">
+        <i class="fas fa-lock"></i> پرداخت امن
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="page-title">بررسی سفارش</div>
+    <div class="checkout-grid">
+      <div class="order-summary"></div>
+      <div class="payment-summary"></div>
+    </div>
+
+  
+    
+      <h3><i class="fas fa-user"></i> اطلاعات دریافت‌کننده</h3>
+      <form id="customer-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>نام <span class="required">*</span></label>
+            <input type="text" id="first-name" placeholder="مثلاً علی" required>
+          </div>
+          <div class="form-group">
+            <label>تخلص <span class="required">*</span></label>
+            <input type="text" id="last-name" placeholder="مثلاً احمدی" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>شماره تماس <span class="required">*</span></label>
+            <input type="tel" id="phone" placeholder="۰۷۸۶xxxxxxx" required>
+          </div>
+          <div class="form-group">
+            <label>آدرس محل سکونت <span class="required">*</span></label>
+            <input type="text" id="address" placeholder="ولایت، شهر، منطقه، خیابان" required>
+          </div>
+        </div>
+		
+      </form>
+    </div>
+  </div>
+
+ <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4><i class="fas fa-store"></i> مینابازار</h4>
+        <p>بزرگترین فروشگاه آنلاین   فیض اباد بدخشان</p>
+        <p><i class="fas fa-map-marker-alt"></i> شهر کهنه فیض اباد بدخشان</p>
+        <p><i class="fas fa-phone"></i> ۰۷۸۶ ۵۵۵ ۱۲۳۴</p>
+        <p><i class="fas fa-envelope"></i> info@minabazar.af</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>راهنمای خرید</h4>
+        <a href="#">نحوه ثبت سفارش</a>
+        <a href="#">روش‌های پرداخت</a>
+        <a href="#">شرایط ارسال</a>
+        <a href="#">ضمانت بازگشت کالا</a>
+      </div>
+      <div class="footer-section">
+        <h4>با ما همراه شوید</h4>
+        <p>از تخفیف‌های ویژه باخبر شوید.</p>
+        <div class="newsletter">
+          <input type="email" placeholder="ایمیل شما">
+          <button>عضویت</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>تمام حقوق برای مینابازار محفوظ است.  ❤️</p>
+    </div>
+  </footer>
+
+    
+  <script src="data/products.js"></script>
+  <script src="utils/money.js"></script>
+  <script src="utils/date.js"></script>
+  <script src="data/cart.js"></script>
+  <script src="scripts/checkout.js"></script>
+  <script>
+    window.addEventListener('load', function() {
+      alert("ما شما را به فروشگاه خوش امدید گفته امیدوایم از خرید تان لذت ببرید.");
+    });
+  </script>
+</body>
+</html>

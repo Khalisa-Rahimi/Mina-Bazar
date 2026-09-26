@@ -1,0 +1,158 @@
+.minabazar-header {
+  background-color: green;
+  color: white;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.minabazar-header-left-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: white;
+}
+
+.header-link:hover {
+  border-color: white;
+}
+
+.small-img {
+  border-radius: 4px;
+}
+
+.minabazar-mobile-logo {
+  display: none;
+  height: 40px;
+}
+
+.minabazar-header-middle-section {
+  flex: 1;
+  max-width: 700px;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  direction: ltr;
+}
+
+.search-bar {
+  flex: 1;
+  height: 44px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  font-size: 16px;
+}
+
+.search-button {
+  width: 50px;
+  height: 44px;
+  background-color: #febd69;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.search-button i {
+  color: #232f3e;
+  font-size: 20px;
+}
+
+.minabazar-header-right-section {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.orders-link {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.returns-text {
+  font-size: 12px;
+  color: #ddd;
+}
+
+.orders-text {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cart-link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-icon {
+  font-size: 28px;
+}
+
+.cart-quantity {
+  position: absolute;
+  top: -5px;
+  right: 15px;
+  background-color: #f08804;
+  color: white;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.cart-text {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+@media (max-width: 900px) {
+  .minabazar-header {
+    padding: 0 20px;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px 20px;
+  }
+  .minabazar-header-middle-section {
+    order: 3;
+    max-width: 100%;
+    margin: 15px 0 0;
+    width: 100%;
+  }
+  .minabazar-header-right-section {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .small-img { display: none; }
+  .minabazar-mobile-logo { display: block; }
+  .orders-link { display: none; }
+  .cart-text { display: none; }
+  .cart-icon { font-size: 24px; }
+  .cart-quantity { right: 10px; }
+}

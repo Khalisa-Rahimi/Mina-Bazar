@@ -1,0 +1,133 @@
+.main {
+  max-width: 1400px;
+  margin: 100px auto 50px;
+  padding: 0 30px;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 25px;
+  margin-top: 20px;
+}
+
+@media (max-width: 992px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+  transition: 0.25s;
+  position: relative;
+}
+.product-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.product-image-container {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.product-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0066c0;
+  margin-bottom: 12px;
+  height: 48px;
+}
+.product-specs {
+  font-size: 13px;
+  color: #555;
+  background-color: #f9f9f9;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin: 8px 0 12px;
+  border: 1px solid #eee;
+}
+.product-rating-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.product-price {
+  font-size: 22px;
+  font-weight: 700;
+  color: #b12704;
+  margin-bottom: 15px;
+}
+.product-options-container {
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.product-option-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #f8f9fa;
+  padding: 5px 12px;
+  border-radius: 25px;
+  border: 1px solid #e0e0e0;
+  font-size: 13px;
+}
+.option-label {
+  font-weight: 600;
+  color: #555;
+}
+.product-option-select {
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+.added-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #0670a8;
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  height: 30px; 
+}
+.add-to-cart-button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
