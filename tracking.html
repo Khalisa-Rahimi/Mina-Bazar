@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>پیگیری سفارش - مینابازار</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/shared/general.css">
+  <link rel="stylesheet" href="styles/shared/mina-bazar-header.css">
+  <link rel="stylesheet" href="styles/pages/tracking.css">
+</head>
+<body>
+  <div class="minabazar-header"><!-- هدر مانند صفحه اصلی --></div>
+
+  <div class="main">
+    <div class="order-tracking">
+      <a class="back-to-orders-link link-primary" href="orders.html">
+        <i class="fas fa-arrow-right"></i> بازگشت به سفارشات
+      </a>
+
+      <!-- ظرف دینامیک برای لیست محصولات -->
+      <div id="track-items-container"></div>
+
+      <!-- بخش وضعیت و نوار پیشرفت -->
+      <div class="progress-labels-container">
+        <div class="progress-label" id="status-preparing">آماده‌سازی</div>
+        <div class="progress-label" id="status-shipping">در حال ارسال</div>
+        <div class="progress-label" id="status-delivered">تحویل شده</div>
+      </div>
+
+      <div class="progress-bar-container">
+        <div class="progress-bar" id="progress-bar" style="width: 0%;"></div>
+      </div>
+    </div>
+  </div>
+
+ <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4><i class="fas fa-store"></i> مینابازار</h4>
+        <p>بزرگترین فروشگاه آنلاین   فیض اباد بدخشان</p>
+        <p><i class="fas fa-map-marker-alt"></i> شهر کهنه فیض اباد بدخشان</p>
+        <p><i class="fas fa-phone"></i> ۰۷۸۶ ۵۵۵ ۱۲۳۴</p>
+        <p><i class="fas fa-envelope"></i> info@minabazar.af</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>راهنمای خرید</h4>
+        <a href="#">نحوه ثبت سفارش</a>
+        <a href="#">روش‌های پرداخت</a>
+        <a href="#">شرایط ارسال</a>
+        <a href="#">ضمانت بازگشت کالا</a>
+      </div>
+      <div class="footer-section">
+        <h4>با ما همراه شوید</h4>
+        <p>از تخفیف‌های ویژه باخبر شوید.</p>
+        <div class="newsletter">
+          <input type="email" placeholder="ایمیل شما">
+          <button>عضویت</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>تمام حقوق برای مینابازار محفوظ است.  ❤️</p>
+    </div>
+  </footer>
+
+
+  <script src="utils/date.js"></script>
+  <script src="scripts/tracking.js"></script>
+  <script>
+    window.addEventListener('load', function() {
+     alert("ما شما را به فروشگاه خوش امدید گفته امیدوایم از خرید تان لذت ببرید.");
+    });
+  </script>
+</body>
+</html>
