@@ -2,17 +2,16 @@
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>مینابازار - فروشگاه آنلاین</title>
+  <title>سفارشات من - مینابازار</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="icon" type="image/jpeg" href="images/mina bazar -logo.jpeg">
   <link rel="stylesheet" href="styles/shared/general.css">
   <link rel="stylesheet" href="styles/shared/mina-bazar-header.css">
-  <link rel="stylesheet" href="styles/pages/mina-bazar.css">
+  <link rel="stylesheet" href="styles/pages/orders.css">
 </head>
 <body>
- 
+  
   <div class="minabazar-header">
     <div class="minabazar-header-left-section">
       <a href="mina-bazar.html" class="header-link">
@@ -21,7 +20,7 @@
       </a>
     </div>
     <div class="minabazar-header-middle-section">
-      <input class="search-bar" type="text" placeholder="جستجوی محصولات...">
+      <input class="search-bar" type="text" placeholder="جستجوی سفارشات...">
       <button class="search-button"><i class="fas fa-search"></i></button>
     </div>
     <div class="minabazar-header-right-section">
@@ -36,11 +35,19 @@
       </a>
     </div>
   </div>
- <div class="main">
-    <div class="products-grid"></div>
+
+  <div class="main">
+    <div class="page-title">
+      سفارشات شما
+      <div class="search-orders">
+        <input type="text" id="order-search" placeholder="جستجوی سفارش (کد، نام محصول، نام مشتری...)">
+        <i class="fas fa-search"></i>
+      </div>
+    </div>
+    <div class="orders-grid"></div>
   </div>
 
- <footer class="site-footer">
+  <footer class="site-footer">
     <div class="footer-content">
       <div class="footer-section">
         <h4><i class="fas fa-store"></i> مینابازار</h4>
@@ -74,15 +81,15 @@
       <p>تمام حقوق برای مینابازار محفوظ است.  ❤️</p>
     </div>
   </footer>
- <script src="data/products.js"></script>
+
   <script src="utils/money.js"></script>
   <script src="utils/date.js"></script>
-  <script src="data/cart.js"></script>
-  <script src="scripts/mina-bazar.js"></script>
+  <script src="scripts/orders.js"></script>
   <script>
     window.addEventListener('load', function() {
-    alert("ما شما را به فروشگاه خوش امدید گفته  امیداوریم از خرید تان لذت ببرد جهان سپاس از استاد حبیب الله برای راهنمایی ها ارزنده شان");
+      alert("ما شما را به فروشگاه مینابازار خوش‌آمد می‌گوییم!\nجهان سپاس از راهنمایی‌ها و حمایت استاد حبیب‌الله شیوا.");alert("ما شما را به فروشگاه خوش امدید گفته امیدوایم از خرید تان لذت ببرید.");
     });
+   
   </script>
 </body>
 </html>
